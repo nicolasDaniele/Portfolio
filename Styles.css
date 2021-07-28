@@ -1,0 +1,62 @@
+﻿body{
+	background-color: black;
+}
+
+h1{
+	font-family: "Tw Cen MT", Arial, sans-serif;
+	color: black;
+	font-size: 50px;
+}
+
+h2{
+    font-family: "Tw Cen MT", Arial, sans-serif;
+	color: black;
+	font-size: 30px;
+	background: -moz-linear-gradient(right, rgba(130, 15, 130, 0.1), rgba(130, 15, 130, 0.6));
+}
+
+h3{
+	font-family: "Tw Cen MT", Arial, sans-serif;
+	color: rgb(255, 200, 255);
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+h6{
+	font-family: "Tw Cen MT", Arial, sans-serif;
+	font-size: 23px;
+	color: rgb(255, 200, 255);
+}
+
+p{
+	font-family: "Tw Cen MT", Arial, sans-serif;
+	font-size: 23px;
+	color: rgb(255, 200, 255);
+}
+
+ul{
+	font-family: "Tw Cen MT", Arial, sans-serif;
+	font-size: 20px;
+	color: rgb(255, 200, 255);
+}
+
+.name{
+	font-family: "Tw Cen MT", Arial, sans-serif;
+	color: black;
+	background: -moz-linear-gradient(right, rgba(130, 15, 130, 0.1), rgba(130, 15, 130, 0.6))
+}
+
+.icon{
+	padding: 15px;
+	color: rgb(160, 15, 160);
+	font-size: 25px;
+}
+.icon:hover{
+	color: rgb(255, 200, 255);
+	font-size: 30px;
+}
+
+#profile{
+	border-radius: 50%;
+	margin-left: 2%;
+}
