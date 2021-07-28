@@ -1,2 +1,2 @@
 # Portfolio
-My portfolio of little games and prototypes made in Unity
+My portfolio of games and prototypes made in Unity
