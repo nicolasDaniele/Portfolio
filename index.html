@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font.css">
+    <title>Portfolio Nicolas Daniele</title>
+</head>
+
+<body>
+    <script src="./script.js"></script>
+
+    <!--SECTION START-->
+    <section id="start">
+        <div class="content">
+            <header>
+                <div class="header-content">
+                    <h1>/ND/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#start" class="selected" onclick="select(this)">START</a></li>
+                            <li><a href="#about-me" onclick="select(this)">ABOUT ME</a></li>
+                            <li><a href="#skills" onclick="select(this)">MY SKILLS</a></li>
+                            <li><a href="#projects" onclick="select(this)">PROJECTS</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--RESPONSIVE MENU ICONS-->
+                    <div id="nav-icon" onclick="responsiveMenu()">
+                        <a href="#links"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentation">
+                <p class="welcome">Welcome!</p>
+                <h2><span>Nicolás Daniele</span></h2>
+                <h3 class="description">
+                    Game Developer
+                </h3>
+                <a href="#projects">Go to Protfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION ABOUT ME-->
+    <section id="about-me">
+        <div class="pic-container">
+            <img src="images/profile-pic.jpg" alt="">
+        </div>
+        <div class="about-me">
+            <p class="section-title">About Me</p>
+            <h2>Hi! I'm <span>Nicolás</span></h2>
+            <p>
+                I'm a self-taught programmer, very passionate about video games and looking to contribute to the growth of the gaming industry.<br>
+                I'm constantly learning and always looking forward to optimize my work.<br>
+                My other passions include music, animation, films and reading.
+            </p>
+            <a href="files/Nicolas-Daniele-Resume.pdf" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!--SECTION SKILLS-->
+    <div class="skills-container" id="skills">
+        <h3>MY SKILLS</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>C++</p>
+                <span class="percentage">80%</span>
+            </div>
+            <div class="bar">
+                <div id="cpp" class="progress-bar-cpp"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>Unreal Engine 4/5</p>
+                <span class="percentage">80%</span>
+            </div>
+            <div class="bar">
+                <div id="ue" class="progress-bar-ue"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>C#</p>
+                <span class="percentage">80%</span>
+            </div>
+            <div class="bar">
+                <div id="cs" class="progress-bar-cs"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>Unity</p>
+                <span class="percentage">80%</span>
+            </div>
+            <div class="bar">
+                <div id="unity" class="progress-bar-unity"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>OOP</p>
+                <span class="percentage">85%</span>
+            </div>
+            <div class="bar">
+                <div id="oop" class="progress-bar-oop"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>GIT</p>
+                <span class="percentage">80%</span>
+            </div>
+            <div class="bar">
+                <div id="git" class="progress-bar-git"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>HTML/CSS/JavaScript</p>
+                <span class="percentage">20%</span>
+            </div>
+            <div class="bar">
+                <div id="htmlcssjs" class="progress-bar-htmlcssjs"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>Java</p>
+                <span class="percentage">20%</span>
+            </div>
+            <div class="bar">
+                <div id="java" class="progress-bar-java"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="skill-list"></span>SQL</p>
+                <span class="percentage">25%</span>
+            </div>
+            <div class="bar">
+                <div id="sql" class="progress-bar-sql"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECTION PROJECTS-->
+    <section id="projects">
+        <h3 class="section-title">MY PROJECTS</h3>
+        <p>Here are some prototypes that I have developed on Unity and Unreal Engine</p>
+
+        <div class="row">
+            <div class="project">
+                <a href="https://nicolasdan.itch.io/starships-n-asteroids" target="_blank">
+                    <img src="images/starship-capture.png" alt="">
+                    <div class="info">
+                        <h4>2D space shooter Gradius/R-Type style</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="https://nicolasdan.itch.io/dash-man" target="_blank">
+                    <img src="images/dashman-capture.png" alt="">
+                    <div class="info">
+                        <h4>2D arcade game Snow Bros/Bubble Bobble style</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="project">
+                <video controls width="500" height="500">
+                    <source src="Videos/Thing.mp4" type="video/mp4">
+                    <source src="Videos/Thing.ogg" type="video/ogg">
+                    <source src="Videos/Thing.webm" type="video/webm">
+                </video>
+                <div class="info">
+                    <h4>3rd person game inspired by classic sci-fi movies</h4>
+                </div>
+            </div>
+
+            <div class="project">
+                <video controls width="500" height="500">
+                    <source src="Videos/Runner.mp4" type="video/mp4">
+                    <source src="Videos/Runner.ogg" type="video/ogg">
+                    <source src="Videos/Runner.webm" type="video/webm">
+                </video>
+                <div class="info">
+                    <h4>Endless runner style game</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION FOOTER-->
+    <footer>
+        <div class="social-media">
+            <a href="https://github.com/nicolasDaniele" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nicol%C3%A1s-daniele-b7820b1b4/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
