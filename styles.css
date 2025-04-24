@@ -233,65 +233,58 @@ html {
 
 .skills-container .skill .bar .progress-bar-cpp {
 	background-color: #fff;
-	width: 80%;
+	width: 75%;
 	height: 6px;
 	animation: progress-cpp 2s forwards;
 }
 
 .skills-container .skill .bar .progress-bar-ue {
 	background-color: #fff;
-	width: 80%;
+	width: 75%;
 	height: 6px;
 	animation: progress-ue 2s forwards;
 }
 
 .skills-container .skill .bar .progress-bar-cs {
 	background-color: #fff;
-	width: 80%;
+	width: 75%;
 	height: 6px;
 	animation: progress-cs 2s forwards;
 }
 
 .skills-container .skill .bar .progress-bar-unity {
 	background-color: #fff;
-	width: 80%;
+	width: 75%;
 	height: 6px;
 	animation: progress-unity 2s forwards;
 }
 
 .skills-container .skill .bar .progress-bar-oop {
 	background-color: #fff;
-	width: 80%;
+	width: 85%;
 	height: 6px;
 	animation: progress-oop 2s forwards;
 }
 
 .skills-container .skill .bar .progress-bar-git {
 	background-color: #fff;
-	width: 80%;
+	width: 85%;
 	height: 6px;
 	animation: progress-git 2s forwards;
 }
 
-.skills-container .skill .bar .progress-bar-htmlcssjs {
-	background-color: #fff;
-	width: 25%;
-	height: 6px;
-	animation: progress-htmlcssjs 2s forwards;
-}
-
-.skills-container .skill .bar .progress-bar-java {
-	background-color: #fff;
-	width: 25%;
-	height: 6px;
-	animation: progress-java 2s forwards;
-}
-
-.skills-container .skill .bar .progress-bar-sql {
+.skills-container .skill .bar .progress-bar-opengl {
 	background-color: #fff;
 	width: 30%;
 	height: 6px;
-	animation: progress-sql 2s forwards;
+	animation: progress-opengl 2s forwards;
+}
+
+.skills-container .skill .bar .progress-bar-htmlcssjs {
+	background-color: #fff;
+	width: 20%;
+	height: 6px;
+	animation: progress-htmlcssjs 2s forwards;
 }
 
 /*Progress Bars Animations*/
@@ -300,7 +293,7 @@ html {
 		width: 0;
 	}
 	100% {
-		width: 80%;
+		width: 75%;
 	}
 }
 
@@ -310,7 +303,7 @@ html {
 	}
 
 	100% {
-		width: 80%;
+		width: 75%;
 	}
 }
 
@@ -320,7 +313,7 @@ html {
 	}
 
 	100% {
-		width: 80%;
+		width: 75%;
 	}
 }
 
@@ -330,7 +323,7 @@ html {
 	}
 
 	100% {
-		width: 80%;
+		width: 75%;
 	}
 }
 
@@ -350,7 +343,17 @@ html {
 	}
 
 	100% {
-		width: 80%;
+		width: 85%;
+	}
+}
+
+@keyframes progress-opengl {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 30%;
 	}
 }
 
@@ -361,26 +364,6 @@ html {
 
 	100% {
 		width: 20%;
-	}
-}
-
-@keyframes progress-java {
-	0% {
-		width: 0;
-	}
-
-	100% {
-		width: 20%;
-	}
-}
-
-@keyframes progress-sql {
-	0% {
-		width: 0;
-	}
-
-	100% {
-		width: 25%;
 	}
 }
 
