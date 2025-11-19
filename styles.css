@@ -477,10 +477,8 @@ footer a {
 	#projects {
 		padding: 50px 0;
 	}
-	#projects .row {
-		display:block;
-	}
-	#projects .row .project {
-		margin: 10px auto;
+	#projects video {
+		max-width: 450px;
+		max-height: 200px;
 	}
 }
