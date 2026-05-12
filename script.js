@@ -34,7 +34,6 @@ window.addEventListener("scroll", () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
-        // Detecta la sección actual
         if (window.scrollY >= sectionTop - 150 &&
             window.scrollY < sectionTop + sectionHeight - 150) {
 
