@@ -364,22 +364,6 @@ html {
 	margin-bottom: 12px;
 }
 
-#projects video {
-	object-fit: cover;
-
-	display: flex;
-  	justify-content: center;
-  	align-items: center; 
-  	height: 100vh;
-
-	max-width: 600px;
-	max-height: 270px;
-	border: 1px solid #000;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-}
-
 .projects-subtitle {
     text-align: center;
     margin-top: 15px;
@@ -388,7 +372,6 @@ html {
 
 .projects-container {
     margin-top: 50px;
-
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -397,13 +380,10 @@ html {
 .project-card {
     display: flex;
     gap: 30px;
-
     background-color: #f5f5f5;
     border-radius: 20px;
     overflow: hidden;
-
     padding: 20px;
-
     transition: transform .3s ease;
 }
 
@@ -412,9 +392,11 @@ html {
 }
 
 .project-card video {
-    width: 500px;
-    border-radius: 10px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    display: block;
+    background-color: black;
 }
 
 .project-info {
