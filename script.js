@@ -1,44 +1,55 @@
 function select(link) {
-    var options = document.querySelectorAll('#links a');
-    options[0].className = "";
-    options[1].className = "";
-    options[2].className = "";
-    options[3].className = "";
 
-    link.className = "selected";
+    const options = document.querySelectorAll('#links a');
 
-    var x = document.getElementById("nav");
-    x.className = "";
+    options.forEach(option => {
+        option.classList.remove('selected');
+    });
+
+    link.classList.add('selected');
+
+    document.getElementById('nav').className = '';
 }
 
 function responsiveMenu() {
-    var x = document.getElementById("nav");
 
-    if (x.className === "") {
-        x.className = "responsive";
-    }
-    else {
-        x.className = "";
-    }
+    const nav = document.getElementById('nav');
+
+    nav.classList.toggle('responsive');
 }
 
-window.onscroll = function () {
-    skillsEffect();
-};
+/* =========================
+   ACTIVE MENU ON SCROLL
+========================= */
 
-function skillsEffect() {
-    var skills = document.getElementById("skills");
-    var skills_distance = window.innerHeight - skills.getBoundingClientRect().top;
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("#links a");
 
-    if (skills_distance >= 300) {
-        document.getElementById("cpp").classList.add("progress-bar-cpp");
-        document.getElementById("ue").classList.add("progress-bar-ue");
-        document.getElementById("cs").classList.add("progress-bar-cs");
-        document.getElementById("unity").classList.add("progress-bar-unity");
-        document.getElementById("oop").classList.add("progress-bar-oop");
-        document.getElementById("git").classList.add("progress-bar-git");
-        document.getElementById("htmlcssjs").classList.add("progress-bar-htmlcssjs");
-        document.getElementById("java").classList.add("progress-bar-java");
-        document.getElementById("sql").classList.add("progress-bar-sql");
-    }
-}
+window.addEventListener("scroll", () => {
+
+    let currentSection = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        // Detecta la sección actual
+        if (window.scrollY >= sectionTop - 150 &&
+            window.scrollY < sectionTop + sectionHeight - 150) {
+
+            currentSection = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("selected");
+
+        const href = link.getAttribute("href").replace("#", "");
+
+        if (href === currentSection) {
+            link.classList.add("selected");
+        }
+    });
+});
