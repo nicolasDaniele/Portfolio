@@ -20,17 +20,17 @@
                         <h1>/ND/</h1>
                         <nav id="nav" class="">
                             <ul id="links">
-                                <li><a href="#start" class="selected" onclick="select(this)">START</a></li>
-                                <li><a href="#about-me" onclick="select(this)">ABOUT ME</a></li>
-                                <li><a href="#highlights" onclick="select(this)">HIGHLIGHTS</a></li>
-                                <li><a href="#skills" onclick="select(this)">SKILLS</a></li>
-                                <li><a href="#projects" onclick="select(this)">PROJECTS</a></li>
+                                <li><a href="#start">START</a></li>
+                                <li><a href="#about-me">ABOUT ME</a></li>
+                                <li><a href="#highlights">HIGHLIGHTS</a></li>
+                                <li><a href="#skills">SKILLS</a></li>
+                                <li><a href="#projects">PROJECTS</a></li>
                             </ul>
                         </nav>
 
                         <!--RESPONSIVE MENU ICONS-->
-                        <div id="nav-icon" onclick="responsiveMenu()">
-                            <a href="#links"><i class="fa-solid fa-bars"></i></a>
+                        <div id="nav-icon">
+                            <i class="fa-solid fa-bars"></i>
                         </div>
                     </div>
                 </header>
@@ -56,10 +56,10 @@
                             Resume
                         </a>
                     </div>
-
                 </div>
             </div>
         </section>
+
 
         <!--SECTION ABOUT ME-->
         <section id="about-me">
@@ -76,6 +76,7 @@
                 <a href="files/Nicolas Daniele - Game Programmer - CV.pdf" download>Download Resume</a>
             </div>
         </section>
+
 
         <!--SECTION HIGHLIGHTS-->
         <section id="highlights">
@@ -113,6 +114,7 @@
 
         </section>
 
+
         <!--SECTION SKILLS-->
         <section class="skills-container" id="skills">
             <h3>MY SKILLS</h3>
@@ -120,7 +122,7 @@
             <div class="skills-grid">
                 <div class="skills-card">
                     <h4>Languages</h4>
-                    
+
                     <p>C++</p>
                     <p>C#</p>
                     <p>JavaScript</p>
@@ -153,54 +155,152 @@
             </div>
         </section>
 
-    <!--SECTION PROJECTS-->
+
+        <!--SECTION PROJECTS-->
         <section id="projects">
             <h3 class="section-title">MY PROJECTS</h3>
             <p class="projects-subtitle">
                 Technical demonstrations of custom engine systems, gameplay architecture and real-time physics simulation.
             </p>
 
-            <div class="projects-container">
+            <div class="projects-carousel">
 
-                <!-- PROJECT 1 -->
-                <div class="project-card">
+                <!-- LEFT BUTTON -->
+                <button class="carousel-btn prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
 
-                    <video controls preload="metadata" playsinline>
-                        <source src="videos/FoundryEngineDemo.mp4" type="video/mp4">
-                        <source src="videos/FoundryEngineDemo.webm" type="video/webm">
-                    </video>
+                <!-- TRACK -->
+                <div class="projects-track">
 
-                    <div class="project-info">
-                        <h4>FoundryEngine</h4>
+                    <!-- FoundryEngine Card -->
+                    <div class="project-slide active">
 
-                        <p>
-                            A custom game engine built in C++ featuring a custom physics
-                            system, collision detection and OpenGL rendering.
-                        </p>
+                        <div class="project-card">
 
-                        <ul>
-                            <li>Custom collision detection</li>
-                            <li>Player movement & jumping</li>
-                            <li>Physics simulation step</li>
-                            <li>OpenGL renderer</li>
-                        </ul>
+                            <video controls preload="metadata" playsinline>
+                                <source src="./videos/FoundryEngineDemo.mp4" type="video/mp4">
+                            </video>
 
-                        <div class="tech-tags">
-                            <span>C++</span>
-                            <span>OpenGL</span>
-                            <span>Physics</span>
+                            <div class="project-info">
+
+                                <h4>Foundry Engine</h4>
+
+                                <p>
+                        A custom game engine built in C++ featuring a custom physics
+                        system, collision detection and OpenGL rendering.
+                    </p>
+
+                    <ul>
+                        <li>Custom collision detection</li>
+                        <li>Player movement & jumping</li>
+                        <li>Physics simulation step</li>
+                        <li>OpenGL renderer</li>
+                    </ul>
+
+                    <div class="tech-tags">
+                        <span>C++</span>
+                        <span>OpenGL</span>
+                        <span>Physics</span>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://github.com/nicolasDaniele/FoundryEngine" target="_blank">
+                            GitHub
+                        </a>
+                    </div>
+
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="project-buttons">
-                            <a href="https://github.com/nicolasDaniele/FoundryEngine" target="_blank">
-                                GitHub
-                            </a>
+                    <!-- TheEndlessDescent Card -->
+                    <!-- <div class="project-slide">
+
+                        <div class="project-card">
+
+                            <video controls preload="metadata" playsinline>
+                                <source src="./videos/ARPGDemo.mp4" type="video/mp4">
+                            </video>
+
+                            <div class="project-info">
+
+                                <h4>The Endless Descent</h4>
+
+                                <p>
+                                    Action RPG prototype focused on combat gameplay and modular AI systems.
+                                </p>
+
+                                <ul>
+                                    <li>Custom State Machine AI</li>
+                                    <li>Enemy behaviors</li>
+                                    <li>Combat systems</li>
+                                    <li>Gameplay architecture</li>
+                                </ul>
+
+                                <div class="tech-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                    <span>AI</span>
+                                    <span>Gameplay Systems</span>
+                                </div>
+
+                                <div class="project-buttons">
+                                    <a href="https://github.com/nicolasDaniele/TheEndlessDescent_Unity" target="_blank">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- AditionalProjects Card -->
+                    <div class="project-slide">
+
+                        <div class="project-card">
+
+                            <video controls preload="metadata" playsinline>
+                                <source src="./videos/Gameplays_720.mp4" type="video/mp4">
+                            </video>
+
+                            <div class="project-info">
+
+                                <h4>Additional Gameplay Systems Work</h4>
+
+                                <p>
+                                    Short gameplay samples from previous collaborative
+                                    and personal projects.
+                                </p>
+
+                                <div class="tech-tags">
+                                    <span>UE5</span>
+                                    <span>Unity</span>
+                                    <span>C++</span>
+                                    <span>C#</span>
+                                    <span>Gameplay</span>
+                                    <span>AI</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- RIGHT BUTTON -->
+                <button class="carousel-btn next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
             </div>
+
+            <!-- DOTS -->
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <!-- <span class="dot"></span> -->
+            </div>
+
         </section>
+
 
         <!--SECTION FOOTER-->
         <footer>
@@ -214,6 +314,6 @@
             </div>
         </footer>
 
-        <script src="./script.js"></script>
+        <script type="module" src="./js/main.js"></script>
     </body>
 </html>
