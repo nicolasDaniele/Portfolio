@@ -1,0 +1,17 @@
+.tech-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: var(--border-radius);
+}
+
+.tech-tags span {
+    background-color: var(--accent);
+    color: white;
+
+    padding: 8px 14px;
+    border-radius: var(--border-radius);
+
+    font-size: 12px;
+    font-weight: bold;
+}

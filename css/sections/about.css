@@ -1,0 +1,74 @@
+#about-me {
+	max-width: 1100px;
+	margin: auto;
+	padding: 100px 15px;
+	color: var(--text-dark);
+	display: flex;
+}
+
+#about-me .pic-container {
+	max-width: 400px;
+	margin-right: 80px;
+}
+
+#about-me .pic-container img {
+	padding: var(--border-radius);
+	width: 250px;
+	border-radius: var(--border-radius);
+	background-color: #f3f3f3;
+}
+
+#about-me .about-me {
+	margin: 0 40px;
+}
+
+#about-me .about-me .section-title {
+	font-size:22px;
+	text-transform: uppercase;
+	color: var(--text-dark);
+	text-decoration:underline;
+	text-decoration-color: #d3d3d3;
+	text-decoration-thickness: 5px;
+}
+
+#about-me .about-me h2 {
+	font-size: 34px;
+	font-weight: bold;
+	margin: var(--border-radius) 0;
+	letter-spacing: 2px;
+}
+
+#about-me .about-me h2 span {
+	color: var(--accent);
+}
+
+#about-me .about-me h3 {
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: var(--border-radius);
+	letter-spacing: 1px;
+}
+
+#about-me .about-me p {
+	font-size: 14px;
+	line-height: 25px;
+	color: #565656;
+	margin-bottom: 12px;
+}
+
+#about-me .about-me a {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	border-radius: 30px;
+	padding: 10px var(--border-radius);
+	border: 1px solid #000;
+	margin-top: 30px;
+	transition: .5s;
+}
+
+#about-me .about-me a:hover {
+	background-color: var(--accent);
+	color: var(--text-light);
+}

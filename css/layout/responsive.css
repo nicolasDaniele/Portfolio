@@ -1,0 +1,81 @@
+@media screen and (max-width:800px) {
+	nav {
+		display: none;
+	}
+	nav.responsive {
+		display: block;
+		background-color: rgba(0, 0, 0, .8);
+		width: 100%;
+		position: absolute;
+		top: 48px;
+		left: 0;
+		padding: 10px 0;
+	}
+	nav.responsive ul {
+		display: block !important;
+		text-align: center;
+	}
+	nav.responsive ul li {
+		margin: 5px 0;
+	}
+	#nav-icon {
+		display: block;
+		color: var(--text-light);
+	}
+	#start .content .presentation h2 {
+		font-size: 40px;
+	}
+	#about-me {
+		padding: 50px 0;
+		display:  block;
+	}
+	#about-me .pic-container {
+		max-width: 100px;
+		margin: auto;
+	}
+	#about-me .pic-container img {
+		padding: 8px;
+	}
+	#about-me .about-me .section-title {
+		text-align: center;
+	}
+	#about-me .about-me h2 {
+		font-size: 25px;
+		text-align: center;
+	}
+	.hero-links {
+		flex-direction: column;
+	}
+	.highlights-container {
+		grid-template-columns: 1fr;
+	}
+	.skills-container {
+		padding: 50px var(--border-radius);
+	}
+	#projects {
+		padding: 50px 0;
+	}
+	#projects video {
+		max-width: 450px;
+		max-height: 200px;
+	}
+	.project-card {
+		flex-direction: column;
+	}
+	.project-info h4 {
+		text-align: center;
+	}
+
+    /* CAROUSEL */
+    .projects-carousel {
+
+        flex-direction: column;
+        gap: var(--border-radius);
+    }
+
+    .carousel-btn.prev,
+    .carousel-btn.next {
+
+        margin: 0;
+    }
+}

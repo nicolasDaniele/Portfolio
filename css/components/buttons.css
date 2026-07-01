@@ -1,0 +1,31 @@
+.btn{
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.btn-outline {
+    border: 2px solid var(--text-dark);
+    color: var(--text-dark);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.btn-primary {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
