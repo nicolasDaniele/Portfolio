@@ -3,7 +3,7 @@ export function initializeScrollSpy() {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("#links a");
 
-    window.addEventListener("scroll", () => {
+    function updateCurrentSection() {
 
         let currentSection = "";
 
@@ -18,16 +18,22 @@ export function initializeScrollSpy() {
             ) {
                 currentSection = section.id;
             }
+
         });
 
         navLinks.forEach(link => {
 
             link.classList.remove("selected");
 
-            if (link.hash === "#" + currentSection)
+            if (link.hash === "#" + currentSection) {
                 link.classList.add("selected");
+            }
+
         });
 
-    });
+    }
 
+    window.addEventListener("scroll", updateCurrentSection);
+
+    updateCurrentSection();
 }
