@@ -13,6 +13,12 @@ export function initializeCarousel() {
 
     function show(index, direction) {
 
+        document.querySelectorAll(".project-slide video")
+        .forEach(video => {
+            video.pause();
+            video.currentTime = 0;
+        });
+
         slides.forEach(slide => {
             slide.classList.remove(
                 "active",
