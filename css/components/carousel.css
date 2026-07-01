@@ -8,18 +8,38 @@
 
 .project-slide {
     display: none;
-    animation: fade .35s ease;
 }
 
 .project-slide.active {
     display: block;
 }
 
-@keyframes fade {
+.project-slide.from-right {
+    animation: slideFromRight .35s ease;
+}
+
+.project-slide.from-left {
+    animation: slideFromLeft .35s ease;
+}
+
+@keyframes slideFromRight {
 
     from {
         opacity: 0;
-        transform: translateX(var(--border-radius));
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
     }
 
     to {

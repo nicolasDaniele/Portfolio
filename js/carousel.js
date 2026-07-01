@@ -11,27 +11,35 @@ export function initializeCarousel() {
 
     let current = 0;
 
-    function show(index) {
+    function show(index, direction) {
 
-        slides.forEach(slide => slide.classList.remove("active"));
+        slides.forEach(slide => {
+            slide.classList.remove(
+                "active",
+                "from-left",
+                "from-right"
+            );
+        });
+
         dots.forEach(dot => dot.classList.remove("active"));
 
         slides[index].classList.add("active");
+
+        if(direction === "next")
+            slides[index].classList.add("from-right");
+        else
+            slides[index].classList.add("from-left");
+
         dots[index].classList.add("active");
     }
 
     next.addEventListener("click", () => {
-
         current = (current + 1) % slides.length;
-        show(current);
-
+        show(current, "next");
     });
 
     prev.addEventListener("click", () => {
-
         current = (current - 1 + slides.length) % slides.length;
-        show(current);
-
+        show(current, "prev");
     });
-
 }
